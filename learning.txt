@@ -1,0 +1,31 @@
+->pehle hum user folder me jaake npm init -y krenge to ek package.json file create hojayengi
+
+->ab typescript file ki jarurat hai so hume typescript syteme me globally install hona chahiye
+npm i -g typescript ->isse globally install hojayega
+
+->ab ek typescript config file create krna hai so 
+npx tsc -init
+             ye krenge 
+
+->ab tsconfig.js me jayenge aur target me es2020 krdenge and
+root wale ko uncomment krdenge aur ./src waha likha hoga tlb usme mereko typescript ka code likhna hai 
+ab outDir ko bhi uncomment krdenge isme se
+
+->ab user me src folder screate krna hai
+
+->ab hume package.json me jaake main ke niche type:"module" likhenge for es6 
+phir uske baad hum scripts ke andar "build":"tsc" likh denge
+
+->ab run krenge 
+npm i express dotenv mongoose
+ye install krne ke baad nod_modules ak folder miljayega hume is folder ke under
+
+->srijan-verma@Srijan-Dell-G15:~/Codes/Web Dev/Project/Chat-app/backend/user$ npm i -D @types/express @types/mongoose @types/dotenv nodemon concurrently
+production ke time pe ye sb dependency kaam dene wali hai
+
+->ab wahi package.json me scripts me chale jayenge aur 
+"start":"node dist/index.js" jisse hum apne server ko start krenge 
+"dev":"conceurrently \"tsc -w\" \"nodemon dist/index/js\" qki nodemon se backend ko run karna hai aur pehla command se build krrhe hai
+
+
+
